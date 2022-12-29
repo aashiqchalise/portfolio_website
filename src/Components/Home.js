@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import Typed from 'react-typed';
-import Hero from '../hero.png';
 
 const Home = () => {
   return (
