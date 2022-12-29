@@ -1,4 +1,361 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* ******************************* DARK THEME / LIGHT THEME *********************************** */
+/* :root{
+  --main-heading:#2B65EC;
+  --text-clr:#393939;
+  --bg-clr:#fff;
+} */
+.dark-theme{
+  --main-heading:#2B65EC;
+  --text-clr:#fff;
+  /* --bg-clr:#111b20; */
+  --bg-clr: #0D1721;
+  --right:3px;
+}
+.light-theme{
+  --main-heading:#2B65EC;
+  --text-clr:#393939;
+  --bg-clr:#fff;
+}
+
+
+/* ******************************* DARK THEME / LIGHT THEME *********************************** */
+* {
+  margin: 0;
+  padding: 0;
+}
+#root{
+  background-color: var(--bg-clr);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.btn-hire-me{
+  background: #2B65EC;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 15px;
+  /* border-radius: 6px; */
+  /* border: 1px solid #2B65EC; */
+  transition: all 0.3s ease;
+
+  /* width: 140px; */
+    box-shadow: rgb(34 39 49 / 15%) 0px 27px 40px 12px;
+    border-radius: 16px;
+
+}
+.btn-hire-me:hover{
+color: #fff;
+  /* background: none; */
+}
+.text-justify{
+  text-align: justify;
+}
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.bafter{
+  content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: var(--text-clr);
+    transform: translateX(-50%);
+}
+.bafter::after{
+  position: relative;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #2B65EC;
+    padding: 4px;
+    bottom: 11px;
+    background: var(--bg-clr);
+    transform: translateX(-50%);
+}
+
+
+
+
+/* ******************************* NAVBAR STYLING *********************************** */
+.navbar {
+  transition: all 0.3s ease;
+}
+/*toggle style start*/
+.toggle{
+  border: 2px solid #2B65EC;
+  border-radius: 1rem;
+  position: relative;
+  padding: 3px;
+  width: 3rem;
+  cursor: pointer;
+}
+.toggle>*{
+  width: 1rem;
+  height: 1rem;
+  color: #2B65EC;
+}
+.t-button{
+  border-radius: 100%;
+  background-color: #2B65EC;
+  position: absolute;
+  right: var(--right);
+}
+/*toggle style end*/
+
+.navbar .navbar-nav .nav-link {
+  letter-spacing: 0.0375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffff !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-sc {
+  background: #6698FF;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  color: #ffff;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.navbar .navbar-brand-sc {
+  font-size: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-brand {
+  font-size: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(43, 101, 236);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar .navbar-brand:hover{
+  color: rgb(43, 101, 236);
+}
+
+.navbar .navbar-brand span {
+  color: var(--text-clr);
+  transition: all 0.3s ease 0s;
+}
+/* .navbar .navbar-brand .navbar-brand{
+cursor: pointer;
+}
+.navbar .navbar-brand .navbar-brand-sc{
+  cursor: pointer;
+} */
+
+
+
+
+
+/* ******************************* HOME STYLING *********************************** */
+
+.home-section .main-content {
+  background: url("./home-background.svg") no-repeat center/cover;
+  height: 100vh;
+}
+
+.home-section .home-content {
+  position: absolute;
+  top: 25%;
+  color: var(--text-clr);
+}
+
+.home-section .home-content .text1 {
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-section .home-content .text2 {
+  font-size: 65px;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-section .home-content .text3 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home-section .home-content .text3 span {
+  color: #2B65EC;
+}
+
+
+
+/* ******************************* ABOUT STYLING *********************************** */
+.about-content span{
+  color: #2B65EC;
+}
+.about-head h2{
+  color: var(--text-clr);
+}
+.about-content .profile img{
+  height: 25rem;
+  width: 25rem;
+  object-fit: cover;
+    border-radius: 204px;
+}
+.about-content .about-right{
+  padding-top: 5rem;
+  color: var(--text-clr);
+}
+
+.bf-about::after{
+  content: "Who i am";
+}
+
+
+
+/* ******************************* SKILLS STYLING *********************************** */
+.skills-head h2{
+  color: var(--text-clr);
+}
+.bf-skills::after{
+  content: "What i know";
+}
+.skills-left{
+  color: var(--text-clr);
+}
+.skills-content .progress{
+  background-color: lightgray;
+  height: 5%;
+}
+
+.skillbar-part .skillbar{
+  margin-bottom: 20px;
+  background-color: lightgrey !important;
+}
+
+/* ******************************* CONTACT STYLING *********************************** */
+.contact-head h2{
+  color: var(--text-clr);
+}
+.bf-contact::after{
+  content: "get in touch";
+}
+.contact-left{
+  color: var(--text-clr);
+}
+.contact-right h4{
+  color: var(--text-clr);
+}
+
+.contact-info .icon{
+  font-size: 20px;
+  color: #2B65EC;
+}
+.social-icon{
+  font-size: 35px;
+  text-align: center;
+}
+.social-icon a{
+  padding: 10px 12px;
+}
+ .alert-info{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ******************************* FOOTER STYLING *********************************** */
+
+
+.footer-part{
+  background-color: #6698FF;
+  padding: 20px 24px;
+  color: #fff;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+/* *******************************????????????????*********************************** */
+/* ******************************* RESPONSIVE CSS *********************************** */
+/* *******************************????????????????? *********************************** */
+
+@media (max-width: 1440px) {}
+
+
+@media (max-width: 1024px) {
+  .about-content .profile img{
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info h5{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn-hire-me {
+    font-size: 15px;
+    padding: 8px 17px;
+}
+.navbar .navbar-brand {
+  color: #fff;
+}
+  .home-section .home-content .text2 {
+    font-size: 42px;
+}
+  .about-content .profile img{
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .about-content .about-right {
+    padding-top: 2rem;
+}
+.contact-info p{
+  margin-bottom: 0;
+}
+.contact-content .message-me{
+  margin-top: 1rem;
+}
+.footer-part {
+  font-size: 14px;
+}
+.social-icon{
+  font-size: 25px;
+}
+}
+
+@media (max-width: 320px) {}
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +392,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
