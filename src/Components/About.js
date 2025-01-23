@@ -1,6 +1,6 @@
 import React from 'react'
-import Profile from '../profile.JPG';
-import Resume from '../Aashiq_Chalise_Resume.pdf';
+import Profile from '../profile1.jpeg';
+import Resume from '../Aashiq_Chalise_Resume1.pdf';
 
 const About = () => {
   return (

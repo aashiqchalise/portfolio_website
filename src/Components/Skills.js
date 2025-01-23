@@ -4,12 +4,12 @@ import SkillBar from 'react-skillbars';
 
 const Skills = () => {
     const skills = [
-        { type: 'HTML', level: 90 },
-        { type: 'CSS', level: 70 },
-        { type: 'Javascript', level: 50 },
-        { type: 'Reactjs', level: 50 },
-        { type: 'Bootstrap', level: 65 },
-        { type: 'MySQL', level: 20 }
+        { type: 'Typescript', level: 60 },
+        { type: 'ReactJS', level: 70 },
+        { type: 'Tailwind CSS', level: 90 },
+        { type: 'Flowbite', level: 70 },
+        { type: 'Material UI', level: 65 },
+        { type: 'Git&Github', level: 80 }
       ];
       const colors = {
         bar: "#3498db",
